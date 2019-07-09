@@ -9,7 +9,7 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
-task_app/tmp/
+task_app/tmp/cache
 
 # Used by dotenv library to load environment variables.
 # .env
