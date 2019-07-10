@@ -1,0 +1,46 @@
+<%= render 'statusHeader' %>
+<div class="row">
+  <div class="col-md-6 col-sm-12 offset-md-3">
+    <div class="card">
+      <div class="card-header">
+        Add New Status
+      </div>
+      <div class="card-body">
+        <%= form_with scope: :status, url: statuses_path, local: true do |form| %>
+          <div class="form-group row">
+            <%= form.label :name, :class=> "col-sm-2 col-form-label" %> &nbsp;
+            <div class="col-sm-8">
+              <%= form.text_field :name, :class=> "form-control" %>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-2">
+              <%= form.label :Active?, :class=> "form-check-label"  %>
+            </div>
+            <div class="col-sm-8" style="padding-left: 5.5%;padding-top: 0.5%;">
+              <%= form.check_box :isActive, :class=>"form-check-input" %>
+            </div>
+          </div>
+          <% if @status.errors.any? %>
+            <div class="alert alert-danger col-md-12" role="alert">
+              <h6>
+                <%= pluralize(@status.errors.count, "error") %> prohibited this status from being saved:
+              </h6>
+              <ul>
+                <% @status.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+          <p class="text-center">
+            <%= form.submit "Add", :class=> "btn btn-success" %>
+          </p>
+        <% end %>
+        <div class="row">
+          <%= link_to 'Go back to index', statuses_path, :class=> "btn btn-link" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
