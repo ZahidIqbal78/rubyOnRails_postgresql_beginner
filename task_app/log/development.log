@@ -1971,3 +1971,376 @@ Processing by StatusesController#index as HTML
 Completed 200 OK in 260ms (Views: 235.3ms | ActiveRecord: 8.4ms)
 
 
+Started GET "/statuses" for ::1 at 2019-07-10 15:20:39 +0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StatusesController#index as HTML
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  [1m[36mStatus Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "statuses" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/statuses/index.html.erb:18
+  [1m[36mStatus Load (0.3ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/views/statuses/index.html.erb:19
+  Rendered statuses/index.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 639ms (Views: 609.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/statuses" for ::1 at 2019-07-10 15:20:46 +0600
+Processing by StatusesController#index as HTML
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  [1m[36mStatus Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "statuses" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/statuses/index.html.erb:18
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/views/statuses/index.html.erb:19
+  Rendered statuses/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 204ms (Views: 190.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/statuses" for ::1 at 2019-07-10 15:22:45 +0600
+Processing by StatusesController#index as HTML
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.4ms)
+  [1m[36mStatus Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "statuses" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/statuses/index.html.erb:18
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/views/statuses/index.html.erb:19
+  Rendered statuses/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 236ms (Views: 208.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/statuses" for ::1 at 2019-07-10 15:23:13 +0600
+Processing by StatusesController#index as HTML
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  [1m[36mStatus Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "statuses" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/statuses/index.html.erb:18
+  [1m[36mStatus Load (0.3ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/views/statuses/index.html.erb:19
+  Rendered statuses/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 238ms (Views: 204.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/statuses/4" for ::1 at 2019-07-10 15:23:19 +0600
+Processing by StatusesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZQR7MjyMDkzjxlYCSnqGMYYjOuAiU8h+soDvb7nJb9+4QflfHrqo6JFZPRw+y3iiNsfXwO1hQ+KCwb4HBTxjFg==", "id"=>"4"}
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/statuses_controller.rb:48
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statuses_controller.rb:49
+  [1m[36mStatus Destroy (6.1ms)[0m  [1m[31mDELETE FROM "statuses" WHERE "statuses"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/statuses_controller.rb:49
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statuses_controller.rb:49
+Redirected to http://localhost:3000/statuses
+Completed 302 Found in 30ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/statuses" for ::1 at 2019-07-10 15:23:19 +0600
+Processing by StatusesController#index as HTML
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.4ms)
+  [1m[36mStatus Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "statuses" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/statuses/index.html.erb:18
+  [1m[36mStatus Load (0.7ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/views/statuses/index.html.erb:19
+  Rendered statuses/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 219ms (Views: 206.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/statuses" for ::1 at 2019-07-10 15:23:34 +0600
+Processing by StatusesController#index as HTML
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  [1m[36mStatus Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "statuses" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/statuses/index.html.erb:18
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/views/statuses/index.html.erb:19
+  Rendered statuses/index.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 239ms (Views: 207.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/statuses/2/edit" for ::1 at 2019-07-10 15:23:40 +0600
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/statuses_controller.rb:20
+  Rendering statuses/edit.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  Rendered statuses/edit.html.erb within layouts/application (47.6ms)
+Completed 200 OK in 232ms (Views: 218.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/statuses" for ::1 at 2019-07-10 15:23:50 +0600
+Processing by StatusesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FPe4BXLYmAuiYiur7fAeE7ZrWcsdby0uxdo9YTfkhyaq4RE1/SzYQwk4eimt3CZAGKluKoRsYmaYW6GhrUl2OQ==", "status"=>{"name"=>"In Progress", "isActive"=>"0"}, "commit"=>"Update"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statuses_controller.rb:27
+  [1m[36mStatus Create (0.6ms)[0m  [1m[32mINSERT INTO "statuses" ("name", "isActive", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "In Progress"], ["isActive", false], ["created_at", "2019-07-10 09:23:50.293943"], ["updated_at", "2019-07-10 09:23:50.293943"]]
+  ↳ app/controllers/statuses_controller.rb:27
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statuses_controller.rb:27
+Redirected to http://localhost:3000/statuses
+Completed 302 Found in 36ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/statuses" for ::1 at 2019-07-10 15:23:50 +0600
+Processing by StatusesController#index as HTML
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  [1m[36mStatus Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "statuses" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/statuses/index.html.erb:18
+  [1m[36mStatus Load (0.3ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/views/statuses/index.html.erb:19
+  Rendered statuses/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 215ms (Views: 199.0ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/statuses/5" for ::1 at 2019-07-10 15:23:55 +0600
+Processing by StatusesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fCZp9mDXU+f6kU+NYharRywQJi+T9YsQ1RQsBvF4BnKhY+ubQuH1Q4gOJJMWp1XUnPTLD1zHAIzlVX1uTY0Kuw==", "id"=>"5"}
+  [1m[36mStatus Load (1.3ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/statuses_controller.rb:48
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statuses_controller.rb:49
+  [1m[36mStatus Destroy (0.5ms)[0m  [1m[31mDELETE FROM "statuses" WHERE "statuses"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/statuses_controller.rb:49
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statuses_controller.rb:49
+Redirected to http://localhost:3000/statuses
+Completed 302 Found in 21ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/statuses" for ::1 at 2019-07-10 15:23:55 +0600
+Processing by StatusesController#index as HTML
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  [1m[36mStatus Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "statuses" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/statuses/index.html.erb:18
+  [1m[36mStatus Load (0.3ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/views/statuses/index.html.erb:19
+  Rendered statuses/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 228ms (Views: 215.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/statuses" for ::1 at 2019-07-10 15:30:27 +0600
+Processing by StatusesController#index as HTML
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.5ms)
+  [1m[36mStatus Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "statuses" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/statuses/index.html.erb:18
+  [1m[36mStatus Load (0.8ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/views/statuses/index.html.erb:19
+  Rendered statuses/index.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 266ms (Views: 254.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/statuses/2/edit" for ::1 at 2019-07-10 15:30:33 +0600
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStatus Load (0.3ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/statuses_controller.rb:20
+  Rendering statuses/edit.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  Rendered statuses/edit.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 229ms (Views: 184.5ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/statuses/2" for ::1 at 2019-07-10 15:30:36 +0600
+Processing by StatusesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sbek5bLXW5+0fXFk9IABr5IYqEHS13rI99TAj4f57iyRnHQLi4dcvjlqGWX5WZ19YoepcfwpMEYLczQkXoxjfA==", "status"=>{"name"=>"In Progress", "isActive"=>"0"}, "commit"=>"Update", "id"=>"2"}
+  [1m[36mStatus Load (0.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/statuses_controller.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statuses_controller.rb:38
+  [1m[36mStatus Update (6.0ms)[0m  [1m[33mUPDATE "statuses" SET "isActive" = $1, "updated_at" = $2 WHERE "statuses"."id" = $3[0m  [["isActive", false], ["updated_at", "2019-07-10 09:30:36.156070"], ["id", 2]]
+  ↳ app/controllers/statuses_controller.rb:38
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statuses_controller.rb:38
+Redirected to http://localhost:3000/statuses
+Completed 302 Found in 39ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/statuses" for ::1 at 2019-07-10 15:30:36 +0600
+Processing by StatusesController#index as HTML
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  [1m[36mStatus Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "statuses" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/statuses/index.html.erb:18
+  [1m[36mStatus Load (0.3ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/views/statuses/index.html.erb:19
+  Rendered statuses/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 227ms (Views: 214.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/statuses/3/edit" for ::1 at 2019-07-10 15:30:39 +0600
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/statuses_controller.rb:20
+  Rendering statuses/edit.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.4ms)
+  Rendered statuses/edit.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 191ms (Views: 177.8ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/statuses/3" for ::1 at 2019-07-10 15:30:42 +0600
+Processing by StatusesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7z/qtePI1SadwbIq2I1J1JvhB1qCzMSKvz22NIjShixajxDnqO1d+nOfwMah2qWAwy8/DhUGR+ePsVrx1bMMVg==", "status"=>{"name"=>"Complete", "isActive"=>"1"}, "commit"=>"Update", "id"=>"3"}
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/statuses_controller.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statuses_controller.rb:38
+  [1m[36mStatus Update (0.4ms)[0m  [1m[33mUPDATE "statuses" SET "isActive" = $1, "updated_at" = $2 WHERE "statuses"."id" = $3[0m  [["isActive", true], ["updated_at", "2019-07-10 09:30:42.090063"], ["id", 3]]
+  ↳ app/controllers/statuses_controller.rb:38
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statuses_controller.rb:38
+Redirected to http://localhost:3000/statuses
+Completed 302 Found in 11ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/statuses" for ::1 at 2019-07-10 15:30:42 +0600
+Processing by StatusesController#index as HTML
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.4ms)
+  [1m[36mStatus Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "statuses" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/statuses/index.html.erb:18
+  [1m[36mStatus Load (0.6ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/views/statuses/index.html.erb:19
+  Rendered statuses/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 211ms (Views: 196.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses/2/edit" for ::1 at 2019-07-10 15:30:54 +0600
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/statuses_controller.rb:20
+  Rendering statuses/edit.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  Rendered statuses/edit.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 252ms (Views: 238.2ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/statuses/2" for ::1 at 2019-07-10 15:30:56 +0600
+Processing by StatusesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ogUf5RKuRQ0xpVDjvtLZiYpRweU7N9qXQjkG+tZAuXN6Ls8LK/5CLLyyOOKzC0Vbes7A1RXJkBm+nvJRDzU0Iw==", "status"=>{"name"=>"In Progress", "isActive"=>"1"}, "commit"=>"Update", "id"=>"2"}
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/statuses_controller.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statuses_controller.rb:38
+  [1m[36mStatus Update (0.4ms)[0m  [1m[33mUPDATE "statuses" SET "isActive" = $1, "updated_at" = $2 WHERE "statuses"."id" = $3[0m  [["isActive", true], ["updated_at", "2019-07-10 09:30:56.841304"], ["id", 2]]
+  ↳ app/controllers/statuses_controller.rb:38
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statuses_controller.rb:38
+Redirected to http://localhost:3000/statuses
+Completed 302 Found in 11ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/statuses" for ::1 at 2019-07-10 15:30:56 +0600
+Processing by StatusesController#index as HTML
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  [1m[36mStatus Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "statuses" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/statuses/index.html.erb:18
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/views/statuses/index.html.erb:19
+  Rendered statuses/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 229ms (Views: 217.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses/new" for ::1 at 2019-07-10 15:31:20 +0600
+Processing by StatusesController#new as HTML
+  Rendering statuses/new.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  Rendered statuses/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 192ms (Views: 178.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/statuses" for ::1 at 2019-07-10 15:31:27 +0600
+Processing by StatusesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3VZeK0zjj0ICaR5u6VcuFHJIla8lvCGNs3GtzlI0gaFjQPcbwxfPCqkzT+ypexZH3IqiTry/bsXu8DEOyJlwvg==", "status"=>{"name"=>"Incomplete", "isActive"=>"1"}, "commit"=>"Add"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statuses_controller.rb:27
+  [1m[36mStatus Create (0.8ms)[0m  [1m[32mINSERT INTO "statuses" ("name", "isActive", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Incomplete"], ["isActive", true], ["created_at", "2019-07-10 09:31:27.871305"], ["updated_at", "2019-07-10 09:31:27.871305"]]
+  ↳ app/controllers/statuses_controller.rb:27
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statuses_controller.rb:27
+Redirected to http://localhost:3000/statuses
+Completed 302 Found in 14ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/statuses" for ::1 at 2019-07-10 15:31:27 +0600
+Processing by StatusesController#index as HTML
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  [1m[36mStatus Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "statuses" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/statuses/index.html.erb:18
+  [1m[36mStatus Load (0.3ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/views/statuses/index.html.erb:19
+  Rendered statuses/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 212ms (Views: 198.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/statuses" for ::1 at 2019-07-10 15:34:00 +0600
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/controllers/statuses_controller.rb:11
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  Rendered statuses/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 234ms (Views: 200.5ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/statuses" for ::1 at 2019-07-10 15:35:10 +0600
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/controllers/statuses_controller.rb:11
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  Rendered statuses/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 264ms (Views: 232.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/statuses" for ::1 at 2019-07-10 15:35:31 +0600
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.3ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/controllers/statuses_controller.rb:11
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (D:/WORKSTATION/github.com/rubyOnRails_postgresql_beginner/task_app/app/views/statuses/index.html.erb:19: syntax error, unexpected '|', expecting ')'
+           @statuses.sort_by(|item| item:name).each_with_in...
+                             ^):
+  
+app/views/statuses/index.html.erb:19: syntax error, unexpected '|', expecting ')'
+Started GET "/statuses" for ::1 at 2019-07-10 15:35:59 +0600
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/controllers/statuses_controller.rb:11
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (D:/WORKSTATION/github.com/rubyOnRails_postgresql_beginner/task_app/app/views/statuses/index.html.erb:19: syntax error, unexpected ':', expecting '}'
+... @statuses.sort_by{|item| item:name}.each_with_index do |sta...
+...                              ^):
+  
+app/views/statuses/index.html.erb:19: syntax error, unexpected ':', expecting '}'
+Started GET "/statuses" for ::1 at 2019-07-10 15:36:30 +0600
+Processing by StatusesController#index as HTML
+  Rendering statuses/index.html.erb within layouts/application
+  Rendered statuses/_statusHeader.html.erb (0.3ms)
+  [1m[36mStatus Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "statuses" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/statuses/index.html.erb:18
+  [1m[36mStatus Load (0.6ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses"[0m
+  ↳ app/views/statuses/index.html.erb:19
+  Rendered statuses/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 224ms (Views: 201.9ms | ActiveRecord: 5.2ms)
+
+
